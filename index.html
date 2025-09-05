@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mood-Based Recommender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="title">🎭 Mood-Based Music & Movie Recommender</h1>
+            <p class="subtitle">Choose your mood and get handpicked songs & movies</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="panel">
+            <h2 class="section-title">Select Your Mood</h2>
+            <div class="mood-grid">
+                <button class="mood-btn" data-mood="happy">😊 Happy</button>
+                <button class="mood-btn" data-mood="sad">😢 Sad</button>
+                <button class="mood-btn" data-mood="romantic">💖 Romantic</button>
+                <button class="mood-btn" data-mood="excited">🔥 Excited</button>
+                <button class="mood-btn" data-mood="relaxed">🌿 Relaxed</button>
+                <button class="mood-btn" data-mood="focused">🎧 Focused</button>
+            </div>
+        </section>
+        <section id="recommendations" class="panel">
+            <h2 class="section-title">Recommendations</h2>
+            <p class="muted">Pick a mood above to see suggestions.</p>
+            <div id="cards" class="cards"></div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <p id="footerText">Made with love 💜</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
